@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/blueToothHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Game Instructions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     
+   
+
+    <Button
+        android:id="@+id/instructionBackButton"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Back" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/textView4"
+        android:layout_below="@+id/blueToothHead" >
+   
+    <TextView
+        android:id="@+id/blueToothText"
+        android:layout_width="match_parent"
+        android:layout_height="1131dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/blueToothHead"
+        android:text="Car Card game is a wonderful and entertaining game to play. 
+You can play alone or against a friend via Bluetooth.
+\n\n
+Car Cards game via Bluetooth:\n
+When playing against a friend via Bluetooth, player 1 have to“Create Game” then player 1 has to give the game a name, and a toast will appear asking the player 1 to “Wait for other player to connect” After player 1 have created game, player 2 (the opponent) has to “Join Game” and type ind the game name that was created by player 1.
+\n\n
+When player 2 is joining the game created by player 1, a toast will pop up telling player 2 to “Wait 10-15 seconds while connecting” 
+Short after a toast will appearer  this the text saying “Connected to player. Please start the game!” The game can start by player 1 and 2 pressing “Start Bluetooth Game”
+\n\n
+When the game has started, a car card will appear on the screen. This is the card the players has “drawn”. On the card there will be a headline with the car bran, a picture of the car, 5 different categories and a deck count at the bottom of the screen.  
+ Player 1 (the player who “Created Game”) is the one who starts off by choosing a category they will be competing in.
+Player 2 can only see the categories his/her card has, and when player 1 has chosen a category, both players will go into the battlefield.\n
+\n\n
+If player 2 won the in the chosen category, the he/she will receive the loser&apos;s card.
+If tie both players will keep their card.
+The category winner is the one who will be choosing the next category they will be competing in.
+\n\n
+When one player has 0 card left and loses the category battle, then the game is over.
+\n\n
+Car Cards offline game:
+When playing offline the player only has to press “play Offline” and then he/she will be playing against the computer. The rules are the same, but the player will be choosing the category every time."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</ScrollView>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/instructionBackButton"
+        android:layout_alignParentRight="true"
+        android:text="Enjoy your new Trump Cards game app"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
